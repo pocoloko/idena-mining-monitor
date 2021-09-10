@@ -2,7 +2,7 @@
 
 ![Screenshot](screenshot_minewatch.png)
 
-Script to check if an idena identity is mining. Uses idena API to check last activity of the address.
+Script to check if an idena identity is mining. Uses idena API to check last activity of the address and sends an e-mail if there is no activity for a time longer than the allowed in config file.
 
 In the [idena](https://idena.io) Proof-of-Person blockchain, individual identities that are validated are encouraged to run their own [node](https://github.com/idena-network/idena-go) on a VPS or on their home PC if their network and hardware can handle it. This node is tied to their identity and can be set to mining mode which earns them iDNA for issuing and verifying blocks.
 
