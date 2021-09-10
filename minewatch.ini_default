@@ -1,0 +1,18 @@
+[DEFAULT]
+# Set to yes for fairly verbose logging to file, no for no logging at all
+LOGGING = no
+
+# Amount of time to tolerate a node offline, in seconds (default 1800s = 30min)
+ALLOWEDTIME = 1800
+
+# Identity to check mining for, ie. the idena address of the identity (0x0000....)
+ADDRESS =
+
+# URL of the idena explorer API to access the identity, this is where we will find the time of last activity for the above address
+APIURL = https://api.idena.io/api/OnlineIdentity/
+
+[MAIL]
+FROM = Idena Node Mining Checker <ENTER_FROM_EMAIL_HERE>
+TO = Name  <ENTER_TO_EMAIL_HERE>
+# Mail server, only works with no authentication and no encryption - meant to be used with a localhost MTA
+SERVER = localhost 
