@@ -17,5 +17,6 @@ WARNING: The e-mail alerts work only with a localhost MTA without authentificati
 3. rename `minewatch.ini_default` to `minewatch.ini`
 4. edit minewatch.ini with the address of the identity you wish to monitor and the from/to emails for the alerts
 5. set up a cron job to run the script at whatever interval you feel comfortable with. I think 10 minutes is optimal.
+6. If you want to test the script, set the ALLOWEDTIME in config file to something really low, and run the script manually
 
 If you encounter any issues please double-check the configuration as no error checks are performed on the configuration parameters
