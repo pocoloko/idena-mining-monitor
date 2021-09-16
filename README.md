@@ -20,3 +20,6 @@ WARNING: The e-mail alerts work only with a localhost MTA without authentificati
 6. If you want to test the script, set the ALLOWEDTIME in config file to something really low, and run the script manually
 
 If you encounter any issues please double-check the configuration as no error checks are performed on the configuration parameters
+
+---
+Found this script useful? I accept iDNA donations to address `0x8dc26a6fbdbe2fdb8b5284ab55f56e720b3c42ad`
