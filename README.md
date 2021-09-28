@@ -6,7 +6,9 @@ Script to check if an idena identity is mining. Uses idena API to check last act
 
 In the [idena](https://idena.io) Proof-of-Person blockchain, individual identities that are validated are encouraged to run their own [node](https://github.com/idena-network/idena-go) on a VPS or on their home PC if their network and hardware can handle it. This node is tied to their identity and can be set to mining mode which earns them iDNA for issuing and verifying blocks.
 
-The protocol issues a penalty if your node is offline for more than 1 hour while set to mining mode. This script's purpose is to notify you if your node is offline for (by default) 30 minutes or more, so you can react on time to bring it back online. It is recommended to keep 30 minutes as the threshold because there are times when your node can be online and mining, but not "active" in the sense that it will show up in the API this script uses for checking activity. If you reduce the threshold you will most likely get false positives, but even at 30 minutes you should verify manually that your node is actually offline.
+The protocol issues a penalty if your node is offline for more than 1 hour while set to mining mode. This script's purpose is to notify you if your node is offline for (by default) 35 minutes or more, so you can react on time to bring it back online. It is recommended to keep 35 minutes as the threshold because there are times when your node can be online and mining, but not "active" in the sense that it will show up in the API this script uses for checking activity. If you reduce the threshold you will most likely get false positives, but even at 35 minutes you should verify manually that your node is actually offline.
+
+During idena validation, you will likely receive an alert if validation and reaching consensus takes longer than 35 minutes in total, this doesn't mean your node will receive a penalty, your node will reconnect and continue mining after consensus has been reached, provided that you have passed the validation process.
 
 WARNING: The e-mail alerts work only with a localhost MTA without authentification or encryption
 
