@@ -2,8 +2,8 @@
 # Set to yes for fairly verbose logging to file, no for no logging at all
 LOGGING = no
 
-# Amount of time to tolerate a node offline, in seconds (default 1800s = 30min)
-ALLOWEDTIME = 1800
+# Amount of time to tolerate a node offline, in seconds (default 2100s = 35min)
+ALLOWEDTIME = 2100
 
 # Identity to check mining for, ie. the idena address of the identity (0x0000....)
 ADDRESS =
